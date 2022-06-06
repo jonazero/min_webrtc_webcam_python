@@ -34,7 +34,7 @@ def create_local_tracks(play_from=None):
         return player.video
     else:
         options = {"framerate": "20", "video_size": "640x480"}
-        webcam = MediaPlayer("video=e2eSoft iVCam",
+        webcam = MediaPlayer("video=Integrated Camera",
                              format="dshow", options=options)
         relay = MediaRelay()
         return None, relay.subscribe(webcam.video)
